@@ -149,13 +149,13 @@ source venv/bin/activate
 ### Translate All `.po` Files in a Folder
 
 ```bash
-python translate_po.py --config config.json
+python translate_po.py 
 ```
 
 ### Translate a Single `.po` File
 
 ```bash
-python translate_po.py --config config.json --file path/to/file.po
+python translate_po.py --file path/to/file.po
 ```
 
 ## 📝 Notes
