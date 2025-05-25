@@ -1,16 +1,16 @@
-name: Generate Translation Dashboard
+name: Build Translation Dashboard
 
 on:
-  workflow_dispatch:     # manual trigger
+  workflow_dispatch:
   schedule:
     - cron: '0 */6 * * *'  # every 6 hours
 
 jobs:
-  dashboard:
+  build-dashboard:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -20,20 +20,25 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install polib
+          pip install polib pyyaml
 
-      - name: Clone HL7 FHIR Core Repository (Sparse Checkout)
+      - name: Prepare sources from YAML
         run: |
-          git clone --depth 1 --filter=blob:none --sparse https://github.com/costateixeira/org.hl7.fhir.core.git fhir-core
-          cd fhir-core
-          git sparse-checkout set org.hl7.fhir.utilities/src/main/resources/source
-          cd ..
-          mkdir -p translation-status/po_files
-          cp fhir-core/org.hl7.fhir.utilities/src/main/resources/source/*.po translation-status/po_files/
+          python translation-status/fetch_sources.py --config translation-status/sources.yaml
 
-      - name: Generate dashboard
+      - name: Build stats from sources
         run: |
-          python translation-status/analyze_po_files.py
+          python translation-status/build_stats.py \
+            --config translation-status/sources.yaml
+
+      - name: Build stats from sources
+        run: |
+          python translation-status/build_stats.py \
+            --config translation-status/sources.yaml
+
+
+      - name: Show dashboard contents
+        run: ls -l translation-status/dashboard
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
