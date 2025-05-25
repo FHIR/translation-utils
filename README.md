@@ -1,5 +1,11 @@
 # 🌐 FHIR IG Translation Utilities
 
+Tools for managing and checking status of translations in the **FHIR Implementation Guide (IG) ecosystem**.
+
+---
+
+# 🌐 FHIR IG Translation Utilities
+
 This repository provides tools for managing and visualizing translations in the **FHIR Implementation Guide (IG) ecosystem**.
 
 It supports `.po`-based localization workflows such as those used by `sushi`, IG Publisher, and related tooling.
@@ -9,17 +15,10 @@ It supports `.po`-based localization workflows such as those used by `sushi`, IG
 ## 📊 Translation Status Dashboard – [`translation-status/`](./translation-status/)
 
 An automated dashboard that visualizes `.po` translation coverage across languages and files.
+Has an interactive stacked bar chart showing the translations that are done and reviewed, for review, or not done.
+Downloadable [`stats.csv`](https://fhir.github.io/translation-utils/stats.csv) and [`stats.json`](https://fhir.github.io/translation-utils/stats.json)
 
-### 🔍 Features:
-- Interactive stacked bar chart (translated, fuzzy, untranslated)
-- Hoverable tooltips with percentages and raw counts
-- Table of all translation stats per file and language
-- Downloadable CSV and JSON stats
-- GitHub Pages–ready (`gh-pages` branch)
-
-📁 See [`translation-status/`](./translation-status/) for usage and structure.  
-🌍 View the live dashboard:  
-`https://fhir.github.io/translation-utils/`
+See [Dashboard](https://fhir.github.io/translation-utils/)  
 
 ---
 
@@ -37,27 +36,6 @@ A command-line tool to automatically translate `.po` files using DeepL or Google
 
 ---
 
-## 🧱 Project Structure
-
-```
-translation-utils/
-├── translation-status/ # Dashboard generator (Python, HTML)
-│ └── README.md
-├── po-translate/ # CLI translation tool using AI services
-│ └── README.md
-└── README.md # This file
-```
-
----
-
-## 🛠 Use Cases
-
-- National/regional IG publishers managing localization
-- Translators reviewing `.po` progress across multiple files
-- CI workflows generating dashboards for multilingual IGs
-
----
-
 ## 📄 License
 
 [MIT](./LICENSE)
@@ -67,3 +45,5 @@ translation-utils/
 ## 🤝 Contributions
 
 Contributions welcome! Add utilities, improve analysis, or suggest better workflows for multilingual IG maintenance.
+
+---
