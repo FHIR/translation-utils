@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-05-25 18:32 UTC",
+  "generated_at": "2025-05-25 18:36 UTC",
   "records": [
     {
       "source": "HAPI FHIR Core libraries",
@@ -136,18 +136,6 @@
     {
       "source": "HAPI FHIR Core libraries",
       "file": "validator-messages",
-      "language": "en",
-      "translated": 0,
-      "fuzzy": 0,
-      "untranslated": 1340,
-      "total": 1340,
-      "pct_translated": 0.0,
-      "pct_fuzzy": 0.0,
-      "pct_untranslated": 100.0
-    },
-    {
-      "source": "HAPI FHIR Core libraries",
-      "file": "validator-messages",
       "language": "ja",
       "translated": 871,
       "fuzzy": 0,
@@ -173,18 +161,6 @@
       "source": "HAPI FHIR Core libraries",
       "file": "rendering-phrases",
       "language": "ru",
-      "translated": 0,
-      "fuzzy": 0,
-      "untranslated": 1080,
-      "total": 1080,
-      "pct_translated": 0.0,
-      "pct_fuzzy": 0.0,
-      "pct_untranslated": 100.0
-    },
-    {
-      "source": "HAPI FHIR Core libraries",
-      "file": "rendering-phrases",
-      "language": "en",
       "translated": 0,
       "fuzzy": 0,
       "untranslated": 1080,
