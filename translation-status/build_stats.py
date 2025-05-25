@@ -15,6 +15,8 @@ def collect_stats(po_root, label):
             if not fname.endswith(".po"):
                 continue
             lang = fname.split('-')[-1].split('.')[0]
+            if lang == "en":
+                continue  # Skip English base language
             file_base = fname.replace(f'-{lang}.po', '')
             path = os.path.join(dirpath, fname)
             po = polib.pofile(path)
