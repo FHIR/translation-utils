@@ -92,7 +92,7 @@
           hovertemplate: "%{y} translated"
         },
         {
-          x: languages, y: fuzzy, name: "Fuzzy", type: "bar", marker: { color: "orange" },
+          x: languages, y: fuzzy, name: "Review needed", type: "bar", marker: { color: "orange" },
           hovertemplate: "%{y} fuzzy"
         },
         {
@@ -111,7 +111,7 @@
       // Table
       const table = document.getElementById("data-table");
       table.innerHTML = "";
-      const headers = ["Source", "File", "Language", "Translated", "Fuzzy", "Untranslated", "Total", "% Translated"];
+      const headers = ["Source", "File", "Language", "Translated", "Review needed", "Untranslated", "Total", "% Translated"];
       const thead = document.createElement("thead");
       thead.innerHTML = "<tr>" + headers.map(h => `<th>${h}</th>`).join("") + "</tr>";
       table.appendChild(thead);
