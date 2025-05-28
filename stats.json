@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-05-28 12:21 UTC",
+  "generated_at": "2025-05-28 18:14 UTC",
   "records": [
     {
       "source": "HAPI FHIR Core libraries",
@@ -161,13 +161,13 @@
       "source": "HAPI FHIR Core libraries",
       "file": "rendering-phrases",
       "language": "ru",
-      "translated": 0,
+      "translated": 1081,
       "fuzzy": 0,
-      "untranslated": 1081,
+      "untranslated": 0,
       "total": 1081,
-      "pct_translated": 0.0,
+      "pct_translated": 100.0,
       "pct_fuzzy": 0.0,
-      "pct_untranslated": 100.0
+      "pct_untranslated": 0.0
     },
     {
       "source": "HAPI FHIR Core libraries",

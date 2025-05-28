@@ -12,6 +12,6 @@ HAPI FHIR Core libraries,validator-messages,ru,0,0,1342,1342,0.0,0.0,100.0
 HAPI FHIR Core libraries,rendering-phrases,de,5,0,1076,1081,0.5,0.0,99.5
 HAPI FHIR Core libraries,validator-messages,ja,871,0,471,1342,64.9,0.0,35.1
 HAPI FHIR Core libraries,validator-messages,de,823,0,519,1342,61.3,0.0,38.7
-HAPI FHIR Core libraries,rendering-phrases,ru,0,0,1081,1081,0.0,0.0,100.0
+HAPI FHIR Core libraries,rendering-phrases,ru,1081,0,0,1081,100.0,0.0,0.0
 HAPI FHIR Core libraries,rendering-phrases,pt,998,0,83,1081,92.3,0.0,7.7
 HAPI FHIR Core libraries,validator-messages,es,697,0,645,1342,51.9,0.0,48.1
